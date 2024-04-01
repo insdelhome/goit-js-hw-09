@@ -1,0 +1,134 @@
+body {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 24px;
+  column-gap: 24px;
+  justify-content: center;
+}
+
+.gallery-item {
+  max-width: 360px;
+  max-height: 200px;
+  object-fit: contain;
+  overflow: hidden;
+  transition: transform 250ms ease-in-out;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.sl-wrapper {
+  background-color: rgba(46, 47, 66, 0.8);
+}
+
+.feedback-form {
+  margin-top: 50px;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 8px;
+  color: rgb(46, 47, 66);
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+  color: rgb(46, 47, 66);
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.feedback-form input {
+  max-width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+  outline: transparent;
+  border: 1px solid rgb(128, 128, 128);
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border 250ms ease-in-out;
+}
+
+.feedback-form input:hover {
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.feedback-form textarea {
+  max-width: 360px;
+  height: 80px;
+  padding: 8px 16px;
+  outline: transparent;
+  border: 1px solid rgb(128, 128, 128);
+  border-radius: 4px;
+  overflow: auto;
+  resize: none;
+  box-sizing: border-box;
+  color: rgb(46, 47, 66);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  transition: border 250ms ease-in-out;
+}
+
+.feedback-form textarea:hover {
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.feedback-form textarea::placeholder {
+  visibility: hidden;
+}
+
+.feedback-form textarea:active::placeholder {
+  visibility: visible;
+}
+
+.feedback-form button {
+  width: 95px;
+  height: 40px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: rgb(78, 117, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  transition: background-color 250ms ease-in-out;
+}
+
+.feedback-form button:hover {
+  background: rgb(108, 140, 255);
+}
